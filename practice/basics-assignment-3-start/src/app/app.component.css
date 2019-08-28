@@ -1,0 +1,11 @@
+.logs{
+    width: 700px;
+}
+.logs p{
+    display: flex;
+    justify-content: space-between;
+}
+
+.white{
+    color: white;
+}

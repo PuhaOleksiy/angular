@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <button class="btn btn-success" (click)="start()">Start</button>
+        <button class="btn btn-danger" (click)="stop()">Stop</button>
+        <button class="btn btn-primary" (click)="clear()">Clear</button>
+        <div>{{ counter.length }}</div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6">
+           <app-odd 
+                *ngFor="let oddItem of odds"
+                [index]="oddItem"></app-odd> 
+        </div>
+        <div class="col-xs-6">
+            <app-even 
+                *ngFor="let evenItem of evens"
+                [index]="evenItem"></app-even>
+        </div>
+    </div>
+</div>
